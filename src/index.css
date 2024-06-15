@@ -23,7 +23,12 @@ body {
   border-color: #3b3b3b;
   user-select: none;
 }
-
+::-webkit-scrollbar { width : 10px ;
+background: #313131;
+}
+::-webkit-scrollbar-thumb { width : 10px ;
+  background: #8b8a8a;
+  }
 canvas {
   touch-action: none;
 }
