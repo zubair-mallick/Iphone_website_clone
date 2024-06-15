@@ -13,6 +13,7 @@ const HowItWorks = () => {
         trigger: '#chip',
         start: '20% bottom'
       },
+      overflow:"hidden",
       opacity: 0,
       scale: 2,
       duration: 2,
@@ -20,6 +21,7 @@ const HowItWorks = () => {
     })
 
     animateWithGsap('.g_fadeIn', {
+      overflow:"hidden",
       opacity: 1,
       y: 0,
       duration: 1,
@@ -28,13 +30,13 @@ const HowItWorks = () => {
   }, []);
 
   return (
-    <section className="common-padding">
-      <div className="screen-max-width">
-        <div id="chip" className="flex-center w-full my-20">
+    <section className="common-padding ">
+      <div className="screen-max-width ">
+        <div id="chip" className="flex-center w-full my-20 ">
           <img src={chipImg} alt="chip" width={180} height={180} />
         </div>
 
-        <div className="flex flex-col items-center">
+        <div className="flex flex-col items-center ">
           <h2 className="hiw-title">
             A17 Pro chip.
             <br /> A monster win for gaming.
@@ -51,7 +53,7 @@ const HowItWorks = () => {
               <img 
                 src={frameImg}
                 alt="frame"
-                className="bg-transparent relative z-10"
+                className="bg-transparent relative z-10 "
               />
             </div>
             <div className="hiw-video">
