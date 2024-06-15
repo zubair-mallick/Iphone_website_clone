@@ -1,8 +1,7 @@
-import gsap from 'gsap';
-import { useGSAP } from '@gsap/react';
-import { heroVideo, smallHeroVideo } from '../utils';
-import { useEffect, useState } from 'react';
-
+import React, { useEffect, useState } from 'react'
+import gsap from 'gsap'
+import {useGSAP} from '@gsap/react'
+import { heroVideo,smallHeroVideo } from '../utils'
 const Hero = () => {
   const [videoSrc, setVideoSrc] = useState(window.innerWidth < 760 ? smallHeroVideo : heroVideo)
 
@@ -42,7 +41,7 @@ const Hero = () => {
         id="cta"
         className="flex flex-col items-center opacity-0 translate-y-20"
       >
-        <a href="#highlights" className="btn">Buy</a>
+        <a href="#highlights " className="btn  ">Buy</a>
         <p className="font-normal text-xl">From $199/month or $999</p>
       </div>
     </section>
